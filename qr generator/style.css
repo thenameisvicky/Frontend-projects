@@ -1,0 +1,101 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #262a2f;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 35px;
+}
+
+.input h3 {
+  margin: 20px;
+  text-align: left;
+}
+
+.input input {
+  margin: 20px;
+  height: 40px;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+.input button {
+  padding: 10px 20px; 
+  color: white;
+  background: #494eea;
+  border: 0px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.input button:hover {
+  color: #494eea;
+  background: white;
+  border: 2px solid #494eea;
+  padding: 9px 15px;
+  transition: 0.1s;
+}
+
+#imgBox {
+  width: 200px;
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+
+#imgBox.show-img {
+  max-height: 300px;
+  border: 2px solid #494eea;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    padding: 12px 17px;
+    width: 200px;
+  }
+
+  .input h3 {
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  .input input {
+    height: 20px;
+    font-size: 8px;
+    margin: 5px;
+  }
+
+  .input button {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+
+  #imgBox.show-img {
+    max-height: 150px;
+    width: 100px;
+  }
+}

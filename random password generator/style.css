@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body{
+    background: #380039;
+    color: white;
+}
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+.input{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.input img {
+    height: 25px;
+    cursor: pointer;
+}
+.input input{
+    border: none;
+    font-size: 16px;
+}
+.container h1{
+    font-size: 45px;
+    font-weight: 500;
+}
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding: 7px;
+}
+.container button{
+    background-color: #019f55;
+    color: white;
+    width: 280px;
+    border: 0px;
+    font-size: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 16px 26px;
+    cursor: pointer;
+}
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+    height: 28px;
+}
+
+@media screen and (max-width : 600px) {
+    .container{
+         margin: 6%;
+         width: 90%;
+    }
+    .input img{
+        height: 25px;
+    }
+    .input input{
+        font-size: 16px;
+    }
+    .container h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .container h1 span {
+        color: #019f55;
+        border-bottom: 2px solid #019f55;
+        padding: 2px;
+    }
+    .container button{
+        background-color: #019f55;
+        color: white;
+        width: 140px;
+        border: 0px;
+        font-size: 8px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        padding: 8px 13px;
+        cursor: pointer;
+    }
+    .container button img {
+        width: 14px;
+        margin-right: 10px;
+        height: 14px;
+    }
+    .input{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+}

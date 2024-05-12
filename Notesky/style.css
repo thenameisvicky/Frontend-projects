@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0PX;
+}
+@media  screen and (max-width:480px) {
+    body{
+        font-size: 10px;
+    }
+    .popup-box{
+        left: 20%;
+    }
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.container{
+    padding: 10px;
+}
+.note-container{
+    padding:10px;
+    width: 25%;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.note-container h2{
+    color: aqua;
+}
+.note-container button{
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    margin-top : 10px;
+}
+.add-button{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.popup-overlay{
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box{
+    background-color: black;
+    color: white;
+    width: 40%;
+    padding: 40px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 2;
+    display: none;
+}
+.popup-box input{
+    width: 100%;
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-bottom: solid white 2px;
+}
+.popup-box textarea{
+    width: 100%;
+    margin: 5px;
+    border: solid white 2px;
+    background-color: transparent;
+    color: white;
+}
+.popup-box input::placeholder{
+    color: white;
+}
+.popup-box textarea::placeholder{
+    color: white;
+    padding: 5px;
+}
+.popup-box button{
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    background-color: lightgreen;
+    border: none;
+}
+#cancle-note{
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    background-color: red;
+    border: none;
+}

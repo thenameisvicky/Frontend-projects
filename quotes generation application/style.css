@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "playfair Display", serif;
+}
+
+.background {
+  background: #bbc6fa;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote-container {
+  background: white;
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 5px 15px;
+}
+.quote-container h2 {
+  margin-bottom: 40px;
+  margin-top: 15px;
+  font-size: 32px;
+  position: relative;
+}
+.quote-container h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-container blockquote {
+  font-size: 26px;
+  max-height: 110px;
+  margin: 0px 10px;
+  overflow-y: scroll;
+}
+.quote-container blockquote::before,
+.quote-container blockquote::after {
+  content: '"';
+}
+.quote-container span {
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  position: relative;
+}
+.quote-container span::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  left: -30px;
+  top: 50%;
+  position: absolute;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button button {
+  width: 150px;
+  height: 40px;
+  margin: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(23, 124, 229);
+  color: white;
+  cursor: pointer;
+}
+#tweet {
+  background: white;
+  color: rgb(23, 124, 229);
+  border: rgb(23, 124, 229);
+  border: solid 1px;
+  width: 150px;
+  margin: 5px 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .quote-container h2 {
+    font-size: 20px;
+  }
+  .quote-container {
+    height: 200px;
+    width: 300px;
+  }
+  .quote-container h2::after{
+    width: 40px;
+  }
+  .quote-container blockquote{
+    max-height: 55px;
+  }
+  .quote-container span{
+    font-size: 10px;
+  }
+  .quote-container blockquote {
+    font-size: 16px;
+  }
+  .button{
+    margin-top: 5px;
+  }
+  #tweet{
+    width: 75px;
+  }
+  .button button {
+    width: 75px;
+    font-size: 10px;
+    height: 20px;
+  }
+}

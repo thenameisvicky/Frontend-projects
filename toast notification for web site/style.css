@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #f7edff;
+}
+.buttons {
+  display: flex;
+  margin: 10%;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 0px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+#toastbox {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0px 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast {
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+  margin: 10px 0px;
+  box-shadow: 0 0 20px rgb(48, 47, 47);
+  background: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards ;
+}
+@keyframes moveleft {
+    100%{
+        transform: translateX(0);
+    }
+}
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: anim 6s linear forwards;
+}
+.toast i {
+  margin: 10px;
+  font-size: 20px;
+  color: green;
+}
+.error i {
+  color: red;
+}
+.error::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: red;
+    animation: anim 6s linear forwards;
+  }
+.valid i {
+  color: orange;
+}
+.valid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: orange;
+    animation: anim 6s linear forwards;
+  }
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}

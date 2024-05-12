@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteskyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Noteskyy</h1>
+    </div>
+    <div class="container">
+        <div class="note-container">
+            <h2>NOTES </h2>
+            <h5>Welcome User</h5>
+            <p>You can press the + button in the right side down corner to add a new note.</p>
+            <button onclick="deletepanel(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add note</h2>
+        <form>
+            <input type="text" placeholder="Note title" id="note-title-input">
+            <input type="text" placeholder="Short description about note" id="note-shortdescription-input">
+            <textarea placeholder="Note content" id="note-content-input"></textarea>
+            <button id="note-add">ADD</button>
+            <button id="cancle-note">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup">+</button>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>

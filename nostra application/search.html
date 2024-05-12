@@ -1,0 +1,25 @@
+<input type="text" onkeyup="check(event)" />
+<div>
+  <h1>One</h1>
+  <h1>Two</h1>
+  <h1>Three</h1>
+  <h1>Four</h1>
+  <h1>Five</h1>
+</div>
+
+<script>
+  var searchBox = "";
+  var container = document.querySelector("div");
+  var elements = container.querySelectorAll("h1");
+
+function check(event) {
+    searchBox = event.target.value.toUpperCase();
+    for (i = 0; i < elements.length; i++) {
+      if (elements[i].textContent.toUpperCase().indexOf(searchBox) < 0) {
+        elements[i].style.display = "none";
+      } else {
+        elements[i].style.display = "block";  
+      }
+    }
+  }
+</script>
