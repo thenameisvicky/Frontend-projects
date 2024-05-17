@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: navy;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input i {
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+  
+  .container input {
+    height: 50px;
+    width: 400px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+  }
+  
